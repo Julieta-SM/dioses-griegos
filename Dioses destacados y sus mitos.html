@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Dioses destacados y sus mitos - Mi sitio Web</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+
+    <style>
+   body {padding: 8%; background-image: url("monte olimpo.jpg"); background-size: cover; background-position: center; background-attachment: fixed; text-align:justify;}
+    h1{font-family:Garamond; color:rgb(221, 175, 88);font-size:700%; text-shadow:rgb(0, 0, 0) 3px 3px 7px;}
+    h2{color:rgb(255, 255, 255); font-size:40px; font-family:cursive; background-color: rgb(221, 175, 88, 0.8);text-align:center; margin: 0;padding: 0.1%;border-radius: 10px 10px 0 0;}    
+    section{background-color: rgb(248, 239, 221, 0.8); /*bordes de la pagina*/border: 5px solid rgb(221, 175, 88, 0.8); border-radius: 20px;}
+    p, ul, ol{padding:0 5% 0 5%}
+   
+    /*encabezado*/
+    #encabezado{display: flex; align-items: center;padding: 0 2% 0 1%;justify-content: space-between;}
+    #navegacion{text-align: center; flex: 1 1 60%;}
+    #barra_navegacion {font-size:100%; font-family:monospace; list-style-type: none; overflow: hidden; margin: 0; padding: 0 ; display: flex; gap: 1%; justify-content:space-between; width: 100%;}
+    nav li {text-decoration-line: none; flex:1 1 25%; padding: 1.5% 3% 1.5% 3%; background-color: rgb(221, 175, 88, 0.8);border: 2px solid rgb(255, 255, 255);border-radius: 0 0 10px 10px;}
+    nav h2{padding: 1%;border: 2px solid rgb(255, 255, 255);}
+    #barra_navegacion a{text-decoration: none;  color:rgb(255, 255, 255);text-transform: uppercase;}
+
+    /*pseudo clases*/
+    article ul{list-style-type: none;}
+    #indice li a:link, #indice li, .adicionales a:link, .parrafo a:link{ color:rgb(189, 137, 41);}
+    #indice li a:hover, .adicionales a:hover, #barra_navegacion a:hover, .parrafo a:hover{color:rgb(0, 0, 0);}
+
+    #indice{font-size:20px;font-family:sans-serif;overflow: auto;height: 150px;}
+    #visitar{font-size:15px; font-family: monospace;}
+    .adicionales{font-size:15px; font-family:monospace;}
+    .titulo_adicional{font-size: 25px;}
+    .parrafo{font-size:20px;font-family:sans-serif;}
+
+    /*cajas*/
+    .parte_abajo{position: relative;}
+    #enlace_referencias {position: absolute; width: 48%; height: 280px;box-sizing: border-box; word-wrap: break-word;overflow: auto;}
+    #enlace_informacion{position: absolute; width: 48%; height: 280px;box-sizing: border-box; left: 52%; top: 20%;overflow: auto;}
+    
+    </style>
+</head>
+
+<nav> <!--barra de navegación-->
+    <section id="encabezado">
+    <img src="Logo griego.png" alt="Logo griego" width="19%">
+    <div id="navegacion">
+        <br><br><h2>Mi sitio Web</h2><br>
+        <ul id="barra_navegacion">
+            <li><a href= "Dioses griegos - Mi sitio web.html">Inicio</a></li>
+            <li><a href= "Dioses destacados y sus mitos.html">Dioses destacados y sus mitos</a></li>
+            <li><a href= "Héroes y sus hazañas.html">Héroes y sus hazañas</a></li>
+            <li><a href= "Criaturas mitológicas.html">Criaturas mitológicas</a></li>
+            <li><a href= "Información de la autora.html">Contacto</a></li>
+        </ul><br><br>
+    </div>
+    </section>
+</nav>
+
+<header>
+    <br><br><br><br><h1><center>Dioses destacados y sus mitos</center></h1><br><br><br><br>
+</header>
+
+
+<body>
+    
+    <section> <br><!--párrafo de introducción-->
+        <p><center class="adicionales">Fecha de publicación // de // de 2025</center></p><br>
+        <center><img src="grupo de dioses.png" alt="Imagen de dioses griegos" width="40%"></center><br><br>
+        <article>
+            <p class="parrafo">Como ya lo hemos dicho, en la mitología griega encontramos dioses poderosos y fascinantes,
+                cuyas historias han sobrevivido y han sido relatados a lo largo de los siglos y por generaciones. </p>
+        </article>
+        <article>
+            <p class="parrafo">El conjunto de estas historias y relatos se conocen como mitos y leyendas griegas. 
+                A través de estos, los griegos buscaban explicar el origen del mundo, los fenómenos naturales,
+                 los valores y costumbres de la época y el origen y comportamiento humano, además de las aventuras
+                 de los dioses, héroes y criaturas mitológicas. </p>
+        <article>
+            <p class="parrafo">A continuación se encontrará algunos de los dioses griegos con su mito destacado.</p>
+        </article><br>
+        <article>
+            <p class="parrafo" id="visitar"><i>Si quieres conocer más sobre los dioses, junto con sus características y que se le 
+                atribuye a los dioses, visita la página: <a href="Dioses griegos - Mi sitio web.html">Dioses griegos</a></i></p>
+        </article><br>
+    </section><br><br><br><br>
+
+    <section>
+        <h2>Índice</h2>
+        <article><ol id="indice">
+            <!--enlaces internos-->
+            <br><li><a href="#enlace_zeus">Zeus.</a></li><br>
+            <li><a href="#enlace_poseidon">Poseidón.</a></li><br>
+            <li><a href="#enlace_hera">Hera.</a></li><br>
+            <li><a href="#enlace_hestia">Hestia.</a></li><br>
+            <li><a href="#enlace_demeter">Deméter.</a></li><br>
+            <li><a href="#enlace_hades">Hades.</a></li><br>
+            <li><a href="#enlace_atenea">Atenea.</a></li><br>
+            <li><a href="#enlace_ares">Ares.</a></li><br>
+            <li><a href="#enlace_afrodita">Afrodita.</a></li><br>
+            <li><a href="#enlace_apolo">Apolo.</a></li><br>
+            <li><a href="#enlace_artemisa">Artemisa.</a></li><br>
+            <li><a href="#enlace_dionisio">Dionisio.</a></li><br>
+            <li><a href="#enlace_hermes">Hermes.</a></li><br>
+            <li><a href="#enlace_eros">Eros.</a></li><br>
+            <li><a href="#enlace_referencias">Referencias.</a></li><br>
+            <li><a href="#enlace_informacion">Información de la autora.</a></li>
+        </ul></article><br>
+    </section><br><br><br><br>
+    
+    <section id="enlace_zeus">
+        <article>
+            <h2>Zeus</h2>
+            <br><p class="parrafo"><b>Titanomaquia</b></p>
+            <p class="parrafo">Antes del gobierno de Zeus, el cosmo era gobernado por Urano, quien era inseguro y creía que alguno de
+                 sus hijos lo destronaría. Por esta razón encerró a los Hecatónquiros y a los Cíclopes en el vientre de la madre de estos,
+                 Gea (diosa de la Tierra), quien se enfadó y planeó destronar a Urano con sus hijos los Titanes. <br> Su hijo Cronos,
+                 castró a Urano, quitándole la mayoría de sus poderes como dios de los cielos. Urano fue derrotado y maldijo a Cronos
+                 diciendo que su hijo también lo destronaría. <br><br>Por la profecía que su padre le había dicho, Cronos se tragó a cada
+                 unos de sus hijos al nacer (Hades, Poseidón, Hestia, Deméter y Hera), esto hizo enojar a Rea ya que no podía ejerce su
+                 papel de madre por culpa de Cronos, por esta razón, cuando dio a luz a Zeus, lo escondió en una cueva y engañó a su marido
+                 dandole una roca para que este se la tragara creyendo que era su hijo.<br> De esta manera, Zeus creció y con la idea de 
+                 derrocar a su padre, le pidió ayuda a Metis, una Titánide, quien le dió una poción, la cual Zeus le entregó a Cronos, 
+                 haciéndolo vomitar y devolver a sus hijos.<br><br>Los dioses (en el Monte Olimpo) empezaron una guerra contra Cronos y los 
+                 Titanes (en el Monte Otris) que duró 10 años, hasta que Zeus liberó a los Cíclopes y a los Hecatónquiros, los cuales les
+                 dieron como agradecimiento el rayo a Zeus, un casco de la invisibilidad a Hades y un tridente a Poseidón.<br>Los dioses 
+                 resultan victoriosos al derrotar a los Titanes, encerrándolos en el Tártaro. Tras la Titanomaquia, Zeus y sus hermanos
+                 se repartieron el universo, y este se convirtió en el rey de los dioses, del Olimpo y del mundo.</p><br>
+            </article>
+    </section><br><br><br><br>
+
+    <section id="enlace_poseidon">
+        <article>
+            <h2>Poseidón</h2>
+            <br><p class="parrafo"><b>Enfrentamiento entre Poseidón y Atenea</b></p>
+            <p class="parrafo">Las ciudades estaban bajo la protección de un dios, pero la ciudad en la que gobernaba Cécrope, todavía no, 
+                por lo que Atenea y Poseidón discutían por la ciudad y estaban dispuestos a luchar por ella. Zeus intervino y dejó que el 
+                pueblo votara por el dios que ofreciera lo mejor para su ciudad.<br>Poseidón golpeó el suelo con su tridente, haciendo 
+                brotar una fuente de agua salada, lo cual no era muy útil, en cambio Atenea ofreció el árbol de <b>olivo</b>, el cual daba
+                madera, aceite y alimento. Por esta razón los atenienses escogieron a Atenea como patrona y esta nombro a la ciudad como
+                <i>Atenas</i> (Otras versiones cuentan que en la votación, todas las mujeres votaron por Ateneas y los hombres por Poseidón,
+                y que por un solo voto Atenea gana). Poseidón estaba furioso por perder, por lo que inundó la región y destruye todo hasta 
+                que Zeus lo detiene y lo deja castigar a las mujeres causantes de su derrota, haciendo que estas no tuvieran derecho al voto
+                 y que el apellido de los hijos fuera el del padre.</p><br>
+            </article>
+    </section><br><br><br><br>
+
+    <section id="enlace_hera">
+        <article>
+            <h2>Hera</h2>
+            <br><p class="parrafo"><b>La conspiración de Hera contra Zeus</b></p>
+            <p class="parrafo">Hera, a pesar de ser poderosa y respetada, vivía dolida y humillada por las constantes infidelidades de Zeus, 
+                su esposo. Debido a los celos y el resentimiento hacia las amantes de Zeus y los hijos que tenía con ellas, un día en secreto, 
+                decide conspirar con otros dioses como Poseidón, Apolo y Atenea para derrocar a Zeus.<br><br>El plan lo llevaron a cabo una 
+                noche, en la que mientras estaba durmiendo Zeus, los dioses lo ataron con cadenas mágicas que nisiquiera él podía romper para 
+                destruirlo y compartir el poder entre ellos, con Hera como líder. Pero la ninfa Thetis (madre del conocido héroe Aquiles), que 
+                era fiel a Zeus, alertó a Briareo, un gigante al que Zeus había liberado. Briareo acudió rápidamente y con su gran fuerza rompe
+                 las cadenas y libera al dios del trueno.<br><br>Cuando Zeus queda libre, este se venga y amenaza a los dioses con un terrible 
+                 castigo, especialmente con Hera. A la diosa la colgó del cielo con grilletes de oro en las muñecas y pesados yunques en los pies, 
+                quedando suspendida entre el cielo y la tierra para que todos los dioses vieran que ocurría cuando lo desafiaban. Hera pemaneció 
+                de esta manera por horas, hasta que los demás dioses le ruegan a Zeus que la perdonara, y este accedió hasta que Hera juró 
+                solemnemente que no volvería a conspirar contra él.</p><br>
+            </article>
+    </section><br><br><br><br>
+
+    <section id="enlace_hestia">
+        <article>
+            <h2>Hestia</h2>
+            <br><p class="parrafo"><b>Hestia y su voto de virginidad eterna</b></p>
+            <p class="parrafo">Hestia, conocida por su serenidad y pureza, atrajo la atención de varios dioses, entre estos Apolo y Poseidón. 
+                Estos dos, fascinados por la belleza de la diosa, empezaron a competir ofreciéndole matrimonio y riquezas para que se convirtiera 
+                en su esposa. Sin embargo, Hestia no quería pertenecer a nadie y cansada de rechazar a los dioses, acudió a su hermano Zeus, al 
+                que le suplicó que la protegiera y le pidió que le permitiera permanecer virgen para siempre, libre de cualquier unión o compromiso 
+                amoroso. Zeus le concedió su deseo y juró que ningún dios podría obligarla ni tocarla, y a cambio le otorgó el honor especial de ser 
+                la primera en recibir las ofrendas de los sacrificios y rituales.</p><br>
+            </article>
+    </section><br><br><br><br>
+
+    <section id="enlace_demeter">
+        <article>
+            <h2>Deméter</h2>
+            <br><p class="parrafo"><b>El rapto de Perséfone y el origen de las estaciones</b></p>
+            <p class="parrafo">Hubo un tiempo un tiempo en que todo el año era primavera y la diosa Deméter proporcionaba todo el año campos de 
+                cultivos, flores y árboles, hasta que un día en el que la diosa se encontraba caminando tranquilamente por un bosque, oyó un grito 
+                de su hija Perséfone que estaba siendo secuestrada por Hades hacia el Inframundo, lugar del que su hija no podría salir.<br>A pesar
+                que Deméter le pidió a los otros dioses ayuda, estos no hicieron nada, por lo que dejó de trabajar como diosa  de la naturaleza, 
+                provocándo que los campos y jardines murieran, dejando a la gente sin alimentos para comer haciendo que empezaran a morir. Al ver 
+                esto, los dioses se vieron obligados a actuar y aunque al principio fue difícil, lograron convencer a Hades que liberara a Perséfone.
+                <br><br>Antes de dejar ir a su nueva esposa, Hades engaña a Perséfone haciéndola comer granos de granada, lo que la obligaba a regresar 
+                al inframundo y quedarse allí 6 meses del año. Deméter al reunirse con su hija que había sido "liberada", se encontraba muy contenta, 
+                hasta que se enteró que tendría que pasar tiempo del año sin ella.<br>De esta manera, se da el origen de las estaciones, cuando Perséfone 
+                subía a visitar a su madre, llegaba la primavera y el verano, pero cuando esta tenía que volver junto a Hades, Deméter se ponía muy 
+                triste, dejando de lado su trabajo, haciendo que llegara el otoño y el invierno.</p><br>
+            </article>
+    </section><br><br><br><br>
+    
+    <section id="enlace_hades">
+        <article>
+            <h2>Hades</h2>
+            <br><p class="parrafo"><b>El intento de secuestro de Perséfone por Teseo y Pirítoo</b></p>
+            <p class="parrafo">Al quedar viudos los héroes Teseo y Pirítoo, deciden volver a casarse con alguna hija de Zeus, 
+                Teseo escogió a Helena como esposa y Pirítoo a Perséfone, la esposa de Hades, el rey del inframundo. Los grandes amigos
+                realizan el viaje al inframundo y allí, le cuentan a Hades el motivo de su visita.<br>Este los invitó amablemente, aunque
+                 estaba lleno de ira por la idea de que le robarían su esposa, por lo que los engañó y los hizo sentar en el Trono del
+                 Olvido en el que atados por serpientes, las erinias los torturaron, hasta que apareció Heracles para realizar el último
+                 de sus 12 trabajos, el cual era capturar a Cerbero. Teseo y Pirítoo le pidieron ayuda, Herácles logró salvar a Teseo,
+                pero a Pirítoo no debido a un temblor.</p><br>
+            </article>
+    </section><br><br><br><br>
+
+    <section id="enlace_atenea">
+        <article>
+            <h2>Atenea</h2>
+            <br><p class="parrafo"><b>El nacimineto de Atenea</b></p>
+            <p class="parrafo">Tras la Titanomaquia, Zeus se casa con la Titánide Metis, la cuál le había dado una poción para derrocar a cronos. 
+                Pero cuendo esta se encontraba embarazada, Zeus recibe una profecía de Urano en la que uno de sus hijos con Metis lo destronaría, 
+                por lo que Zeus se traga a Metis evitando que esta profecía se cumpla.<br><br>Por un tiempo, todo parecía ir en orden, se casó con 
+                su hermana Hera y con esta tuvo hijos, pero el dios sufría terribles dolores de cabeza. Zeus le pide a Hefesto que le clavara un 
+                hacha en la frente (en otras versiones Atenea u otros dioses son quienes le abren la cabeza a Zeus y debido a que Zeus tuvo una hija 
+                solo, decidió tener un hijo sola como venganza, naciendo Hefesto quien es descrito como feo y cojo.), dejando una herida por la que 
+                salió la diosa Atenea ya adulta y totalmente armada, que debido a haber nacido de frente de su padre, se volvió en la diosa más sabia
+                 y una gran estratega.</p><br>
+            </article>
+    </section><br><br><br><br>
+
+    <section id="enlace_ares">
+        <article>
+            <h2>Ares</h2>
+            <br><p class="parrafo"><b>Ares y Afrodita: La Trampa de Hefesto</b></p>
+            <p class="parrafo">Ares, dios de la guerra, y Afrodita, diosa del amor y la belleza, eran amantes en secreto, a pesar que ella estaba
+                casada con Hefesto. Sin embargo, Helios, el dios del sol, los descubrió y le contó todo a Hefesto. Este, llenos de celos y furia, ideó 
+                el plan de construir una red invisible e irrompible y la colocó en la cama de los amantes.<br><br>Cuando Ares y Afrodita volvieron a 
+                encontrarse, quedaron atrapados por la red y Hefesto llamó a todos los dioses del Olimpo para que fueran testigos de su deshonra. Los 
+                dioses se rieron del espectáculo, pero al final, Poseidón intercede para que Hefesto los liberara, y Ares huyó avergonzado.</p><br>
+            </article>
+    </section><br><br><br><br>
+
+    <section id="enlace_afrodita">
+        <article>
+            <h2>Afrodita</h2>
+            <br><p class="parrafo"><b>El nacimiento de Afrodita</b></p>
+            <p class="parrafo">Afrodita, la diosa del amor, la belleza y el deseo, tuvo un nacimiento distintoal de otros dioses, nacidos del vientre 
+                de una diosa o de la unión de dos divinidades. Afrodita nació del mar, en un acto violento y misterioso que dio paso a una de las figuras 
+                más encantadoras del Olimpo.<br><br>Según la versión más antigua del mito, todo comenzó con una confrontación entre el dios Urano (el Cielo) 
+                y su hijo Cronos. Urano temía el poder de sus hijos, y para evitar que lo destronaran, los mantenía encerrados en el vientre de su madre, 
+                Gea (la Tierra). Cansada de este sufrimiento, Gea pidió ayuda a sus hijos, y fue Cronos quien se atrevió a enfrentarse a su padre. Con una 
+                hoz de acero, lo castró y arrojó sus genitales al mar.<br><br>Cuando los órganos de Urano tocaron las aguas, la espuma blanca que se formó 
+                alrededor de ellos dio origen a Afrodita. De esta mezcla de sangre y espuma, surgió la diosa, completamente formada, y tan hermosa que incluso 
+                las olas parecían inclinarse ante ella. Flotando sobre una gran concha marina, Afrodita fue llevada por el viento hasta las costas de Chipre. 
+                Allí, al tocar tierra firme, la naturaleza floreció a su paso, dejando maravillados a todos los dioses del Olimpo con su belleza.</p><br>
+            </article>
+    </section><br><br><br><br>
+
+    <section id="enlace_apolo">
+        <article>
+            <h2>Apolo</h2>
+            <br><p class="parrafo"><b>Apolo y Dafne</b></p>
+            <p class="parrafo">Un día en el que Eros se encontraba cerca a un río, jugando con sus flechas de oro y plomo. Estas eran pequeñas que no parecía 
+                que pudieran hacer algún daño.<br>Apolo pasó caminando junto al río tras vencer a la Pitón con sus maravilosas flechas doradas, y sintiéndose 
+                orgulloso de su victoria, vió a Eros y se burló de él y de sus flechas diciendo que estas no eran dignas de un verdadero dios. Ofendido, Eros 
+                decide darle una lección.<br>Cuando vió a la ninfa Dafne caminando cerca, le disparó con una flecha con punta de plomo, mientras que al dios 
+                apolo, le disparó una flecha de oro haciéndolo enamorarse perdidamente de Dafne. Desde ese momento, Apolo comenzó a perseguir a Dafne, 
+                tratando de conquistarla con palabras dulces y promesas, pero ella no quería nada con él ni con ningún hombre.<br><br>Dafne corría por los 
+                bosques, huyendo de su insistente perseguidor, y cansada y desesperada, Dafne le pide ayuda a su padre, el dios del río Peneo, para que la 
+                salvara de apolo. Este le ayuda a su hija y la transforma en un árbol de laurel, un hermoso árbol con brillantes hojas verdes y flores tan 
+                rosadas como las mejillas de Dafne.<br><br>Apolo se encontraba triste al ver a su amada convertida en árbol, y aunque ya no podía tenerla, 
+                juró que el laurel sería un símbolo de gloria, lo transplantó a su tempo y se hizo una corona con las brillantes hojas verdes en honor a Dafne.</p><br>
+            </article>
+    </section><br><br><br><br>
+
+    <section id="enlace_artemisa">
+        <article>
+            <h2>Artemisa</h2>
+            <br><p class="parrafo"><b>La Osa Mayor y la Osa Menor</b></p>
+            <p class="parrafo">Este mito cuenta la historia de Calisto, una joven ninfa, una de las seguidoras más fieles y mejor amiga de Artemisa. Calisto 
+                había hecho voto de castidad para servir a la diosa en los bosques y mantenerse alejada del amor y los hombres. Sin embargo, la belleza de la
+                 ninfa llamó la atención de Zeus, y al saber que esta no se le acercaría en su forma normal, Zeus tomó la forma de Artemisa para engañarla. 
+                Bajo esta apariencia Zeus sedujo a Calisto y ella quedó embarazada.<br><br>Tiempo después, Artemisa se enteró de esto y la exilia de su clan.<br>
+                La situación empeora cuando Hera se entera de la infidelidad de su marido y como castigo transforma a Calisto en una osa (en algunas versiones 
+                quien la transforma es la misma Artemisa, o Zeus para protegerla de los celos de Hera).<br><br>Al pasar los años, Calisto conservaba su 
+                conciencia y vagaba por los bosques evitando a los humanos y dioses, mientras que su hijo Arcas creció sin saber quién era su madre.<br>Un día, 
+                mientras Arcas casaba, se topó con su madre en forma de osa, y al no saberlo, se dispuso a matarla. En ese momento Zeus intervino y para salvarlos 
+                a loas dos, los elevó al cielo, convirtiéndolos en las constelaciones de la Osa Mayor y la Osa Menor, de modo que madre e hijo permenecieran juntos 
+                por toda la eternidad. (En algunas versiones Hera, aún resentida, le pide a Océano que impidiera que las dos constelaciones descansaran en el 
+                horizonte como las demás estrellas, condenándolas a girar sin descanso en el cielo nocturno.)  </p><br>
+            </article>
+    </section><br><br><br><br>
+
+    <section id="enlace_dionisio">
+        <article>
+            <h2>Dionisio</h2>
+            <br><p class="parrafo"><b>El nacimiento de Dionisio</b></p>
+            <p class="parrafo">Dionisio es conocido por ser el dios dos veces nacido. Este era hijo de Zeus y de la mortal Sémele, que debido a  los 
+                celos de Hera, esta la engaña para que le pida a Zeus que se mostrara con todo su esplendor divino. Al hacerlo, fue tan poderoso que sémele 
+                muere calcinada. Sin embargo, Zeus rescata al bebé del vientre de Sémele y lo cose en su muslo hasta que se termina de gestar.<br><br> Para 
+                protegerlo de al ira de Hera, Diomnisio fue criado en secreto por ninfas y al crecer descubre el vino, y viaja enseñando su cultivo, hasta que 
+                finalmente Zeus lo reconoce como dios legítimo y le otorga un lugar en el Olimpo.
+            </p><br>
+            </article>
+    </section><br><br><br><br>
+
+    <section id="enlace_hermes">
+        <article>
+            <h2>Hermes</h2>
+            <br><p class="parrafo"><b>Hermes y el hurto del ganado de Apolo</b></p>
+            <p class="parrafo">Siendo un recién nacido, demostró su astucia al escaparse de su cuna y robar el ganado de su hermano Apolo. Para no ser descubierto, 
+                caminó hacia atrás con los animales y les puso corteza de árbol en las patas para no dejar huellas claras y escondió el rebaño en una cueva.<br><br>
+                Apolo al darse cuenta del robo, le reclama a Hermes y aunque al principio este niega todo, luego admite el robo y le ofrece a Apolo una lira como regalo. 
+                Apolo quedó encantado con la lira hecha con el caparazón de una tortuga y perdona a Hermes.
+            </p><br>
+            </article>
+    </section><br><br><br><br>
+
+    <section  id="enlace_eros">
+        <article>
+            <h2>Eros</h2>
+            <br><p class="parrafo"><b>La historia de amor entre Eros y Psique</b></p>
+            <p class="parrafo">Psique era una princesa tan bella que despertó los celos de Afrodita, quien envió a su hijo Eros para hacer que se enamorara del hombre más 
+                feo del mundo. Pero al verla, Eros se enamoró perdidamente de ella. La llevó a vivir en un hermoso palacio, pero con la condición de que nunca mirara su rostro.
+                <br><br>Psique vivía feliz, aunque no sabía quién era su esposo. Por curiosidad y por influencia de sus hermanas, una noche encendió una lámpara para verlo 
+                mientras dormía, y al descubrir que era el dios del amor, unas gotas de aceite lo despertaron. <br>Eros, dolido por su desconfianza, la abandonó. Y Psique, 
+                arrepentida, emprendió un duro viaje para recuperarlo. <br>Afrodita la obligó a cumplir varias tareas imposibles, como separar semillas mezcladas o traer agua 
+                del inframundo. Con la ayuda de fuerzas divinas y animales, Psique logró superarlas todas.<br>Finalmente, Eros la perdona y le pide ayuda a Zeus para convertirla 
+                en inmortal. Eros y Psique se casa y juntos tuvieron una hija llamada Voluptas (Placer). </p><br>
+            </article>
+    </section><br><br><br><br>
+    
+    <footer>
+        <aside class="parte_abajo">
+            <section id="enlace_referencias">
+                <h2 class="titulo_adicional">Referencias</h2>
+                    <ul class="adicionales">
+                        <br><li>Mitologías del mundo. (s. f. ). Titanomaquia. Mitologías del mundo. Recuperado de: <a href="https://mitologiasdelmundo.com/titanomaquia/" target="_blank">https://mitologiasdelmundo.com/titanomaquia/</a></li><br>
+                        <li>Vélez, Laura. (2020). Perséfone y las cuatro estaciones. Leyendas cortas para niños. Recuperado de: <a href="https://www.guiainfantil.com/articulos/ocio/cuentos-infantiles/persefone-y-las-cuatro-estaciones-leyendas-cortas-para-ninos/" target="_blank">https://www.guiainfantil.com/articulos/ocio/cuentos-infantiles/persefone-y-las-cuatro-estaciones-leyendas-cortas-para-ninos//</a></li><br>
+                        <li>Todo sobre mitología griega. (s. f. ). El mito del enfrentamiento entre Poseidón y Atenea. Recuperado de: <a href="https://todosobremitologiagriega.wordpress.com/el-mito-del-enfrentamiento-entre-poseidon-y-atenea/" target="_blank">https://todosobremitologiagriega.wordpress.com/el-mito-del-enfrentamiento-entre-poseidon-y-atenea/</a></li><br>
+                        <li>Elías, Marta. (2020). Teseo y Pirítoo buscan esposa. Por la Grecia de Zus. Recuperado de: <a href="https://porlagreciadezeus.es/teseo-piritoo-esposa/" target="_blank">https://porlagreciadezeus.es/teseo-piritoo-esposa/</a></li><br>
+                        <li>Cuesta, Alfonso. (2021). El nacimiento de Atenea. Por la Grecia de Zeus. Recuperado de: <a href="https://porlagreciadezeus.es/nacimiento-atenea/" target="_blank">https://porlagreciadezeus.es/nacimiento-atenea/</a></li><br>
+                        <li>Julie L. Mellby. (2012). El nacimiento de Afrodita, o Venus surgiendo de la espuma del mar. Princeton. Recuperado de: <a href="https://www.princeton.edu/~graphicarts/2012/03/the_birth_of_aphrodite.html" target="_blank">https://www.princeton.edu/~graphicarts/2012/03/the_birth_of_aphrodite.html</a></li><br>
+                        <li>Mitologías del mundo. (s. f. ). Apolo y Dafne. Mitologías del mundo. Recuperado de: <a href="https://mitologiasdelmundo.com/apolo-dafne/" target="_blank">https://mitologiasdelmundo.com/apolo-dafne/</a></li><br>
+                        <li>Marcano Arciniegas, Rodrigo. (2022). El nacimeinto de Dionso. Prodavinci. Recuperado de: <a href="https://prodavinci.com/el-nacimiento-de-dioniso/" target="_blank">https://prodavinci.com/el-nacimiento-de-dioniso/</a></li><br>
+                        <li>Mejías, Luis. (2020). El mito de Hermes y el hurto del ganado de APolo. Culturizando.com. Recuperado de: <a href="https://culturizando.com/el-mito-de-hermes-y-el-hurto-del-ganado-de-apolo/" target="_blank">https://culturizando.com/el-mito-de-hermes-y-el-hurto-del-ganado-de-apolo/</a></li><br>
+                        <li>Yuste, Juan. (2020). Eros y Psique, la historia de amor más bonita de la mitología griega. Recuperado de: <a href="https://culturainquieta.com/estimulante/eros-y-psique-la-historia-de-amor-mas-bonita-de-la-mitologia-griega/" target="_blank">https://culturainquieta.com/estimulante/eros-y-psique-la-historia-de-amor-mas-bonita-de-la-mitologia-griega/</a></li><br>
+                    </ul><br>
+                </section></aside>
+    
+            <aside class="parte_abajo">
+            <section id="enlace_informacion">
+            <h2 class="titulo_adicional">Información de la autora</h2>
+            <center><p class="adicionales"><br>Nombre: Julieta Silva Mejía<br>
+                Redes sociales: Instagram @jusime10<br>
+                Contacto: julietaskolmi1@gmail.com - +57 320 9488343<br>
+                Institución: Skolmi<br>
+                Lugar: Bogotá - Colombia<br>
+            </p>
+            <img src="https://drive.google.com/thumbnail?id=1qM3NDvg1EptXOxHKQMLWAr5WHQ5cyOuH" alt="Foto Autora" width="100"></center><br>
+            </section></aside>
+        </footer>
+</body>
+</html>
