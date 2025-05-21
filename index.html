@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Dioses griegos - Mi sitio Web</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+
+   <style>
+    body {padding: 8%; background-image: url("monte olimpo.jpg"); background-size: cover; background-position: center; background-attachment: fixed; text-align:justify;}
+    h1{font-family:Garamond; color:rgb(221, 175, 88);font-size:700%; text-shadow:rgb(0, 0, 0) 3px 3px 7px;}
+    h2{color:rgb(255, 255, 255); font-size:40px; font-family:cursive; background-color: rgb(221, 175, 88, 0.8);text-align:center; margin: 0;padding: 0.1%;border-radius: 10px 10px 0 0;}    
+    section{background-color: rgb(248, 239, 221, 0.8); /*bordes de la pagina*/border: 5px solid rgb(221, 175, 88, 0.8); border-radius: 20px;}
+    p, ul, ol {padding:0 5% 0 5%}
+    th {background-color: rgb(221, 175, 88, 0.8);  height: 0.25%; width: 20%; text-transform: uppercase;}
+    tr {background-color: rgb(250, 250, 250, 0.8); height:50px;}
+    .tabla, th, td{border:solid rgb(0, 0, 0) 1px;}
+   
+    /*encabezado*/
+    #encabezado{display: flex; align-items: center;padding: 0 2% 0 1%;justify-content: space-between;}
+    #navegacion{text-align: center; flex: 1 1 60%;}
+    #barra_navegacion {font-size:100%; font-family:monospace; list-style-type: none; overflow: hidden; margin: 0; padding: 0 ; display: flex; gap: 1%; justify-content:space-between; width: 100%;}
+    nav li {text-decoration-line: none; flex:1 1 25%; padding: 1.5% 3% 1.5% 3%; background-color: rgb(221, 175, 88, 0.8);border: 2px solid rgb(255, 255, 255);border-radius: 0 0 10px 10px;}
+    nav h2{padding: 1%;border: 2px solid rgb(255, 255, 255);}
+    #barra_navegacion a{text-decoration: none;  color:rgb(255, 255, 255);text-transform: uppercase;}
+
+    /*pseudo clases*/
+    article ul{list-style-type: none;}
+    #indice li a:link, #indice li, .adicionales a:link, .parrafo a:link{color:rgb(189, 137, 41);}
+    #indice li a:hover, .adicionales a:hover, #barra_navegacion a:hover, .parrafo a:hover{color:rgb(0, 0, 0);}
+
+    #indice{font-size:20px;font-family:sans-serif;overflow: auto;height: 150px;}
+    #columna3_atributo{width: 333px;}
+    #visitar{font-size:15px; font-family: monospace;}
+    .adicionales{font-size:15px; font-family:monospace;}
+    .titulo_adicional{font-size: 25px;}
+    .lista{font-size:18px;font-family:sans-serif;}
+    .parrafo{font-size:20px;font-family:sans-serif;}
+    .tabla{font-size:15px;font-family:sans-serif; text-align:center;width:70%;}
+    .columna3_texto{text-align:justify;padding: 0 1.5% 0 1.5%;}
+
+    /*cajas*/
+    .parte_abajo{position: relative;}
+    #enlace_referencias {position: absolute; width: 48%; height: 280px;box-sizing: border-box; word-wrap: break-word;overflow: auto;}
+    #enlace_informacion{position: absolute; width: 48%; height: 280px;box-sizing: border-box; left: 52%; top: 20%;overflow: auto;}
+    
+    /*Bootstrap*/
+    $carousel-control-color:             $white;
+    $carousel-control-width:             15%;
+    $carousel-control-opacity:           .5;
+    $carousel-control-hover-opacity:     .9;
+    $carousel-control-transition:        opacity .15s ease;
+    $carousel-control-icon-filter:       null;
+    $carousel-indicator-width:           30px;
+    $carousel-indicator-height:          3px;
+    $carousel-indicator-hit-area-height: 10px;
+    $carousel-indicator-spacer:          3px;
+    $carousel-indicator-opacity:         .5;
+    $carousel-indicator-active-bg:       $white;
+    $carousel-indicator-active-opacity:  1;
+    $carousel-indicator-transition:      opacity .6s ease;
+    $carousel-caption-width:             70%;
+    $carousel-caption-color:             $white;
+    $carousel-caption-padding-y:         1.25rem;
+    $carousel-caption-spacer:            1.25rem;
+    $carousel-control-icon-width:        2rem;
+    $carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/></svg>");
+    $carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/></svg>");
+    $carousel-transition-duration:       .6;
+    $carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+
+    </style>
+
+</head>
+
+<nav> <!--barra de navegación-->
+    <section id="encabezado">
+    <img src="Logo griego.png" alt="Logo griego" width="19%">
+    <div id="navegacion">
+        <br><br><h2>Mi sitio Web</h2><br>
+        <ul id="barra_navegacion">
+            <li><a href= "Dioses griegos - Mi sitio web.html">Inicio</a></li>
+            <li><a href= "Dioses destacados y sus mitos.html">Dioses destacados y sus mitos</a></li>
+            <li><a href= "Héroes y sus hazañas.html">Héroes y sus hazañas</a></li>
+            <li><a href= "Criaturas mitológicas.html">Criaturas mitológicas</a></li>
+            <li><a href= "Información de la autora.html">Contacto</a></li>
+        </ul><br><br>
+    </div>
+    </section>
+</nav>
+
+<header>
+    <br><br><br><br><h1><center>Dioses Griegos</center></h1><br><br><br><br>
+</header>
+
+<body>
+    
+    <section> <br><!--párrafo de introducción-->
+        <p><center class="adicionales">Fecha de publicación // de // de 2025</center></p>
+
+        <!--Bootstrap Carrusel-->
+        <center><div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="imagenescarrusel" src="dioses 1.png" d-block w-100 alt="Imagen de dioses griegos">
+                </div>
+                <div class="carousel-item">
+                    <img class="imagenescarrusel" src="dioses 2.png" d-block w-100 alt="Imagen de dioses griegos">
+                </div>
+                <div class="carousel-item">
+                    <img class="imagenescarrusel" src="dioses 3.png" d-block w-100 alt="Imagen de dioses griegos">
+                </div>
+                <div class="carousel-item">
+                    <img class="imagenescarrusel" src="dioses 4.png" d-block w-100 alt="Imagen de dioses griegos">
+                </div>
+            </div>
+        </div></center>
+
+        <article>
+            <p class="parrafo">Los dioses griegos son las deidades de la mitología de la Antigua Grecia. Se caracterizan por tener atributos humanos como el amor, la ira, la envidia o la alegría,
+                pero con poderes sobrenaturales que controlaban aspectos de la naturaleza, la vida y el destino de los humanos, usados como explicación al origen y el funcionamiento del universo.</p>
+        </article>
+        <article>
+            <p class="parrafo">Estos dioses habitaban en el <i>Monte Olimpo</i>, donde se reunían para tomar decisiones sobre los humanos y el mundo. Debido a que estas deidades eran un reflejo de 
+                los humanos, estos eran vengativos, celosos, crueles, inseguros, egocentricos, entre otras cualidades humanas.</p>
+        <article>
+            <p class="parrafo"> Las historias de cada dios están recogidas en mitos y leyendas que explicaban fenómenos naturales, valores y costumbres de la época. Cada dios o diosa tenía funciones específicas.</p>
+        </article><br><br>
+    </section><br><br><br><br>
+
+    <section>
+        <h2>Índice</h2>
+        <article><ol id="indice">
+            <!--enlaces internos-->
+            <br><li><a href="#enlace_caracteristicas">Características de los dioses.</a></li><br>
+            <li><a href="#enlace_principales">Principales dioses del Olimpo.</a></li><br>
+            <li><a href="#enlace_referencias">Referencias.</a></li><br>
+            <li><a href="#enlace_informacion">Información de la autora.</a></li>
+        </ul></article>
+    </section><br><br><br><br>
+    
+    <section id="enlace_caracteristicas">
+        <article>
+            <h2>Características de los dioses</h2>
+            <br><p class="parrafo">Algunas de las principales características de los dioses griegos son:</p>
+            <ul class="lista">
+                <li><b>Antropomorfismo:</b> A los dioses se le atribuyen las cualidades y rasgos de los humanos. A pesar de ser dioses, se comportaban como las personas
+                y sentian las mismas emociones y sentimientos como celos, amor, enojo, deseos de venganza y deseos sexuales.</li><br>
+                <li><b>Inmortalidad:</b> Eran seres inmortales, pero si podían ser derrotados en batallas, herise o ser encarcelados.</li><br>
+                <li><b>Poderes sobrenaturales:</b> Estos poseían habilidades y poderes en relación a lo que representaban, gobernaban o eran dueños.</li><br>
+                <li><b>Interacciones con los humanos:</b> A pesar de ser superiores a los humanos, los dioses interactuaban con ellos de diferentes maneras como ayudándoles,
+                castigándolos, manipulándolos o teniendo relaciones amorosas con ellos.</li>
+            </ul></article><br>
+    </section><br><br><br><br>
+    
+    <section id="enlace_principales">
+        <article>
+            <h2>Principales dioses del Olimpo</h2>
+            <br><p class="parrafo">A continuación, se presentan algunos de los dioses griegos más importantes que formaban parte 
+                del panteón olímpico, con su nombre equivalente en la mitología romana y el atributo que pertenece a cada uno:</p>
+            <br><center><table class="tabla">
+                <thead><tr><th>Nombre</th>
+                            <th>Nombre Romano</th>
+                            <th id="columna3_atributo">Atributo</th></tr></thead>
+
+                <tbody>
+                    <tr><td>Zeus</td><td>Júpiter</td><td class="columna3_texto">Rey de los dioses y dios del cielo, se le atribuye el rayo.</td></tr>
+                    <tr><td>Hades</td><td>Plutón</td><td class="columna3_texto">Dios del inframundo y más temido por los mortales.</td></tr>
+                    <tr><td>Poseidón</td><td>Neptuno</td><td class="columna3_texto">Dios de las aguas, los mares y los ríos, y provoca terremotos, tormentas e inundaciones.</t></tr>
+                    <tr><td>Hera</td><td>Juno</td><td class="columna3_texto">Reina del Olimpo y diosa del matrimonio, el parto y las mujeres.</td></tr>
+                    <tr><td>Hestia</td><td>Vesta</td><td class="columna3_texto">Diosa del hogar, la familia y el fuego sagrado.</td></tr>
+                    <tr><td>Deméter</td><td>Ceres</td><td class="columna3_texto">Diosa de la agricultura, la cosecha y la fertilidad.</td></tr>
+                    <tr><td>Atenea</td><td>Minerva</td><td class="columna3_texto">Diosa de la sabiduría, la guerra, la justicia y la ciencia.</td></tr>
+                    <tr><td>Ares</td><td>Marte</td><td class="columna3_texto">Dios de la guerra y la violencia.</td></tr>
+                    <tr><td>Afrodita</td><td>Venus</td><td class="columna3_texto">Diosa del amor, la belleza, el deseo, la sensualidad y la procreación.</td></tr>
+                    <tr><td>Apolo</td><td>Febo</td><td class="columna3_texto">Dios de la música, la poesía, las profecías, la curación y del sol.</td></tr>
+                    <tr><td>Artemisa</td><td>Diana</td><td class="columna3_texto">Diosa de la caza, los animales salvajes, la virginidad, los nacimientos y las mujeres.</td></tr>
+                    <tr><td>Dionisio</td><td>Baco</td><td class="columna3_texto">Dios del vino, las festividades, la locura, el teatro y la embriaguez.</td></tr>
+                    <tr><td>Hermes</td><td>Mercurio</td><td class="columna3_texto">Dios mensajero, de los viajeros, de los pastores, los comerciantes, los ladrones, el ingenio y los inventos.</td></tr> 
+                    <tr><td>Eros</td><td>Cupido</td><td class="columna3_texto">Dios del amor, la lujuria, la fertilidad, el deseo y la sexualidad.</td></tr>       
+                </tbody>
+            </table></center></article><br><br>
+            <article>
+                <p class="parrafo" id="visitar"><i>Si quieres conocer más sobre algunos de los mitos destacados de estos dioses, visita la página: <a href="Dioses destacados y sus mitos.html">Dioses destacados y sus mitos</a></i></p>
+            </article><br>
+    </section><br><br><br>
+
+    <footer>
+        <aside class="parte_abajo">
+            <section id="enlace_referencias">
+                <h2 class="titulo_adicional">Referencias</h2>
+                <ul class="adicionales">
+                    <br><li>Redacción National Geographic. (2023). ¿Cuáles son los dioses griegos y qué representan?. National Geographic. Recuperado de: <a href="https://www.nationalgeographicla.com/historia/2023/08/cuales-son-los-dioses-griegos-y-que-representan" target="_blank">https://www.nationalgeographicla.com/historia/2023/08/cuales-son-los-dioses-griegos-y-que-representan</a></li><br>
+                    <li>Kiss, Teresa. (2024). Dioses griegos de la Antigüedad. Concepto. Recuperado de: <a href="https://concepto.de/dioses-griegos-de-la-antiguedad/" target="_blank">https://concepto.de/dioses-griegos-de-la-antiguedad/</a></li> 
+                </ul><br>
+            </section></aside>
+
+        <aside class="parte_abajo">
+        <section id="enlace_informacion">
+        <h2 class="titulo_adicional">Información de la autora</h2>
+        <center><p class="adicionales"><br>Nombre: Julieta Silva Mejía<br>
+            Redes sociales: Instagram @jusime10<br>
+            Contacto: julietaskolmi1@gmail.com - +57 320 9488343<br>
+            Institución: Skolmi<br>
+            Lugar: Bogotá - Colombia<br>
+        </p>
+        <img src="https://drive.google.com/thumbnail?id=1qM3NDvg1EptXOxHKQMLWAr5WHQ5cyOuH" alt="Foto Autora" width="100"></center><br>
+        </section></aside>
+    </footer>
+
+</body>
+</html>
